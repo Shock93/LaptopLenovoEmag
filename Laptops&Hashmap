@@ -1,0 +1,438 @@
+package lenovoHash;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class LaptopLenovo {
+
+
+	public static void main(String[] args) {
+		
+		HashMap<Double,String> map = new HashMap<Double,String>();
+		
+		LaptopLenovoEmag item1 = new LaptopLenovoEmag();
+		item1.id = 1;
+		item1.description = "Laptop Gaming Lenovo Legion Y520-15IKBN cu procesor Intel® Core™ i5-7300HQ 2.50GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 1TB, nVIDIA GeForce GTX 1050Ti 4GB, Free DOS, Black";
+		item1.price = (double) 3599;
+		item1.stock = "Available";
+		item1.review = "Yes";
+		
+		LaptopLenovoEmag item2 = new LaptopLenovoEmag();
+		item2.id = 2;
+		item2.description = "Laptop Gaming Lenovo Legion Y520-15IKBN cu procesor Intel® Core™ i5-7300HQ 2.50 GHz, Kaby Lake, 15.6" +
+				", Full HD, IPS, 4GB, 1TB, nVIDIA GeForce GTX 1050 2GB, Free DOS, Black";
+		item2.price = (double) 3527;
+		item2.stock = "Available";
+		item2.review = "Yes";
+		
+		LaptopLenovoEmag item3 = new LaptopLenovoEmag();
+		item3.id = 3;
+		item3.description = "Laptop Gaming Lenovo Legion Y520-15IKBN cu procesor Intel® Core™ i5-7300HQ 2.50 GHz, Kaby Lake, 15.6" +
+				", Full HD, IPS, 4GB, 2TB, nVIDIA GeForce GTX 1050 2GB, Free DOS, Black";
+		item3.price = (double) 2899;
+		item3.stock = "Unavailable";
+		item3.review = "Yes";
+		
+		LaptopLenovoEmag item4 = new LaptopLenovoEmag();
+		item4.id = 4;
+		item4.description = "Laptop Gaming Lenovo Legion Y520-15IKBN cu procesor Intel® Core® i7-7700HQ 2.80GHz, Kaby Lake™, 15.6" + 
+				", Full HD, IPS, 8GB, 1TB, nVIDIA GeForce GTX 1050 Ti 4GB, Free DOS, Black";
+		item4.price = (double) 3999;
+		item4.stock = "Available";
+		item4.review = "Yes";
+		
+		LaptopLenovoEmag item5 = new LaptopLenovoEmag();
+		item5.id = 5;
+		item5.description = "Laptop Gaming Lenovo Legion Y520-15IKBM cu procesor Intel® Core™ i5-7300HQ 2.50 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 2TB, nVIDIA GeForce GTX 1060 6GB Max-Q, Free DOS, Black";
+		item5.price = (double) 3699;
+		item5.stock = "Unavailable";
+		item5.review = "Yes";
+		
+		LaptopLenovoEmag item6 = new LaptopLenovoEmag();
+		item6.id = 6;
+		item6.description = "Laptop Gaming Lenovo Legion Y520-15IKBM cu procesor Intel® Core™ i7-7700HQ 2.80 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 2TB, nVIDIA GeForce GTX 1060 6GB Max-Q, Free DOS, Black";
+		item6.price = (double) 4799;
+		item6.stock = "Available";
+		item6.review = "Yes";
+		
+		LaptopLenovoEmag item7 = new LaptopLenovoEmag();
+		item7.id = 7;
+		item7.description = "Laptop Gaming Lenovo Legion Y520-15IKBM cu procesor Intel® Core™ i7-7700HQ 2.80 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 1TB, nVIDIA GeForce GTX 1060 3GB Max-Q, Free DOS, Black";
+		item7.price = (double) 4599;
+		item7.stock = "Limited";
+		item7.review = "Yes";
+		
+		LaptopLenovoEmag item8 = new LaptopLenovoEmag();
+		item8.id = 8;
+		item8.description = "Laptop Gaming Lenovo Legion Y520-15IKBN cu procesor Intel® Core® i7-7700HQ 2.80GHz, Kaby Lake™, 15.6" + 
+				", Full HD, IPS, 8GB, 1TB, nVIDIA GeForce GTX 1050 4GB, Free DOS, Black";
+		item8.price = (double) 4599;
+		item8.stock = "Available";
+		item8.review = "Yes";
+		
+		LaptopLenovoEmag item9 = new LaptopLenovoEmag();
+		item9.id = 49;
+		item9.description = "Laptop Gaming Lenovo Legion Y520 cu procesor Intel® Core® i7-7700HQ 2.80GHz, Kaby Lake™, 15.6" + 
+				", Full HD, IPS, 8GB, 512GB SSD, nVIDIA GeForce GTX 1050 Ti 4GB, Microsoft Windows 10 Home, Black";
+		item9.price = (double) 5149;
+		item9.stock = "Refurbished";
+		item9.review = "No";
+		
+		LaptopLenovoEmag item10 = new LaptopLenovoEmag();
+		item10.id = 10;
+		item10.description = "Laptop Gaming Lenovo Legion Y520-15IKBN cu procesor Intel® Core® i5-7300HQ 2.50GHz, Kaby Lake™, 15.6" + 
+				", Full HD, IPS, 8GB, 1TB, nVIDIA GeForce GTX 1050 4GB, Free DOS, Black";
+		item10.price = (double) 3586;
+		item10.stock = "Limited";
+		item10.review = "Yes";
+		
+		LaptopLenovoEmag item11 = new LaptopLenovoEmag();
+		item11.id = 11;
+		item11.description = "Laptop Gaming Lenovo Legion Y520-15IKBN cu procesor Intel® Core™ i5-7300HQ pana la 3.50 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 256GB SSD, NVIDIA GeForce GTX 1050Ti 4GB, Free DOS, Black/Gold";
+		item11.price = (double) 3899;
+		item11.stock = "Available";
+		item11.review = "No";
+		
+		LaptopLenovoEmag item12 = new LaptopLenovoEmag();
+		item12.id = 12;
+		item12.description = "Laptop Gaming Lenovo Legion Y520-15IKBN cu procesor Intel® Core™ i5-7300HQ pana la 3.50 GHz, Kaby Lake, 15.6" + 
+				", Full HD, 8GB, 256GB SSD, NVIDIA GeForce GTX 1050 4GB, Free DOS, Red";
+		item12.price = (double) 3999;
+		item12.stock = "Limited";
+		item12.review = "No";
+		
+		LaptopLenovoEmag item13 = new LaptopLenovoEmag();
+		item13.id = 13;
+		item13.description = "Laptop Gaming Lenovo Y520-15IKBN cu procesor Intel® Core™ i7-7700HQ pana la 3.80 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 256GB SSD, NVIDIA GeForce GTX 1050 4GB, Free DOS, Black";
+		item13.price = (double) 4599;
+		item13.stock = "Limited";
+		item13.review = "No";
+		
+		LaptopLenovoEmag item14 = new LaptopLenovoEmag();
+		item14.id = 14;
+		item14.description = "Laptop Gaming Lenovo Legion Y520-15IKBN cu procesor Intel® Core™ i5-7300HQ 2.50 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 1TB + 128GB SSD, nVIDIA GeForce GTX 1050Ti 4GB, Free DOS, Black";
+		item14.price = (double) 4399;
+		item14.stock = "Last 3 stock products!";
+		item14.review = "Yes";
+		
+		LaptopLenovoEmag item15 = new LaptopLenovoEmag();
+		item15.id = 15;
+		item15.description = "Laptop Gaming Lenovo Y520-15IKBN cu procesor Intel® Core™ i5-7300HQ pana la 3.50 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 256GB SSD, NVIDIA GeForce GTX 1050 4GB, Free DOS, Black";
+		item15.price = (double) 4099;
+		item15.stock = "Limited";
+		item15.review = "No";
+		
+		LaptopLenovoEmag item16 = new LaptopLenovoEmag();
+		item16.id = 16;
+		item16.description = "Laptop Gaming Lenovo IdeaPad Y520-15IKBN cu procesor Intel® Core™ i7-7700HQ pana la 3.80 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 1TB, NVIDIA GeForce GTX 1050Ti 2GB, Free DOS, Black";
+		item16.price = (double) 5099;
+		item16.stock = "Limited";
+		item16.review = "No";
+		
+		LaptopLenovoEmag item17 = new LaptopLenovoEmag();
+		item17.id = 17;
+		item17.description = "Laptop Gaming Lenovo Y520-15IKBN cu procesor Intel® Core™ i7-7700HQ pana la 3.80 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 256GB SSD, NVIDIA GeForce GTX 1050Ti 4GB, Free DOS, Black";
+		item17.price = (double) 4899;
+		item17.stock = "Limited";
+		item17.review = "No";
+		
+		LaptopLenovoEmag item18 = new LaptopLenovoEmag();
+		item18.id = 18;
+		item18.description = "Laptop Gaming Lenovo IdeaPad Y520-15IKBN cu procesor Intel® Core™ i7-7700HQ pana la 3.80 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 1TB, NVIDIA GeForce GTX 1050 2GB, Free DOS, Black";
+		item18.price = (double) 4899;
+		item18.stock = "Limited";
+		item18.review = "No";
+		
+		LaptopLenovoEmag item19 = new LaptopLenovoEmag();
+		item19.id = 19;
+		item19.description = "Laptop Gaming Lenovo Y520-15IKBN cu procesor Intel® Core™ i7-7700HQ pana la 3.80 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 512GB SSD, NVIDIA GeForce GTX 1050Ti 4GB, Free DOS, Black";
+		item19.price = (double) 5399;
+		item19.stock = "Limited";
+		item19.review = "No";
+		
+		LaptopLenovoEmag item20 = new LaptopLenovoEmag();
+		item20.id = 20;
+		item20.description = "Incarcator laptop Lenovo Legion Y520-15IKBN 135W";
+		item20.price = (double) 203.88;
+		item20.stock = "Available";
+		item20.review = "No";
+		
+		LaptopLenovoEmag item21 = new LaptopLenovoEmag();
+		item21.id = 21;
+		item21.description = "Incarcator original Lenovo Ideapad Y520-15IKBN 135W";
+		item21.price = (double) 262.00;
+		item21.stock = "Available";
+		item21.review = "No";
+		
+		LaptopLenovoEmag item22 = new LaptopLenovoEmag();
+		item22.id = 22;
+		item22.description = "Laptop Gaming Lenovo Legion Y520-15IKBN cu procesor Intel® Core™ i7-7700HQ 2.80 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 2TB, nVIDIA GeForce GTX 1050Ti 4GB, Free DOS, Black";
+		item22.price = (double) 3649;
+		item22.stock = "Refurbished";
+		item22.review = "Yes";
+		
+		LaptopLenovoEmag item23 = new LaptopLenovoEmag();
+		item23.id = 23;
+		item23.description = "Laptop Gaming Lenovo Legion Y520-15iKBN cu procesor Intel® Core™ i5-7300HQ 2.50 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 2TB, nVIDIA GeForce GTX 1050Ti 4GB, Free DOS, Black";
+		item23.price = (double) 3349;
+		item23.stock = "Refurbished";
+		item23.review = "Yes";
+		
+		LaptopLenovoEmag item24 = new LaptopLenovoEmag();
+		item24.id = 24;
+		item24.description = "Laptop Gaming Lenovo Legion Y520-15IKBN cu procesor Intel® Core™ i5-7300HQ 2.50 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 1TB + 128GB SSD, nVIDIA GeForce GTX 1050Ti 4GB, Free DOS, Black";
+		item24.price = (double) 3699;
+		item24.stock = "Refurbished";
+		item24.review = "No";
+		
+		LaptopLenovoEmag item25 = new LaptopLenovoEmag();
+		item25.id = 25;
+		item25.description = "Laptop Gaming Lenovo Legion Y520-15IKBM cu procesor Intel® Core™ i5-7300HQ 2.50 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 1TB, nVIDIA GeForce GTX 1060 3GB Max-Q, Free DOS, Black";
+		item25.price = (double) 3899;
+		item25.stock = "Available";
+		item25.review = "No";
+		
+		LaptopLenovoEmag item26 = new LaptopLenovoEmag();
+		item26.id = 26;
+		item26.description = "Laptop Gaming Lenovo Legion Y520 cu procesor Intel® Core™ i5-7300HQ pana la 3.50 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 256GB, nVIDIA GeForce® GTX 1050 Ti 4GB, Free DOS, Red";
+		item26.price = (double) 3899;
+		item26.stock = "Limited";
+		item26.review = "Yes";
+		
+		LaptopLenovoEmag item27 = new LaptopLenovoEmag();
+		item27.id = 27;
+		item27.description = "Laptop Gaming Lenovo Legion IdeaPad Y520 cu procesor Intel® Core™ i7-7700HQ pana la 3.80 GHz, Kaby Lake, 15.6" + 
+				", Full HD, 8GB, 1TB + 128GB SSD, NVIDIA GeForce GTX 1060 6GB Max-Q, Free DOS, Black";
+		item27.price = (double) 4999;
+		item27.stock = "Last 2 products!";
+		item27.review = "No";
+		
+		LaptopLenovoEmag item28 = new LaptopLenovoEmag();
+		item28.id = 28;
+		item28.description = "Laptop Gaming Lenovo Legion Y520-15IKBM cu procesor Intel® Core™ i7-7700HQ 2.80 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 16GB, 512GB SSD M.2, nVIDIA GeForce GTX 1060 6GB Max-Q, Free DOS, Black";
+		item28.price = (double) 6599;
+		item28.stock = "Last product in STOCK!!!";
+		item28.review = "No";
+		
+		LaptopLenovoEmag item29 = new LaptopLenovoEmag();
+		item29.id = 29;
+		item29.description = "Laptop Gaming Lenovo Legion Y520-15IKBM cu procesor Intel® Core™ i5-7300HQ 2.50 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 1TB, nVIDIA GeForce GTX 1060 3GB Max-Q, Free DOS, Black";
+		item29.price = (double) 4743;
+		item29.stock = "Available";
+		item29.review = "No";
+		
+		LaptopLenovoEmag item30 = new LaptopLenovoEmag();
+		item30.id = 30;
+		item30.description = "Laptop Gaming Lenovo Legion Y520-15IKBM cu procesor Intel® Core™ i7-7700HQ 2.80 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 16GB, 512GB SSD M.2, nVIDIA GeForce GTX 1060 6GB Max-Q, Free DOS, Black";
+		item30.price = (double) 6149;
+		item30.stock = "Refurbished";
+		item30.review = "Yes";
+		
+		LaptopLenovoEmag item31 = new LaptopLenovoEmag();
+		item31.id = 31;
+		item31.description = "Laptop Gaming Lenovo Legion Y520 cu procesor Intel® Core™ i5-7300HQ pana la 3.50 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 1TB + 256GB SSD, nVIDIA GeForce GTX 1050Ti 4GB, Free DOS, Black/Gold";
+		item31.price = (double) 4099;
+		item31.stock = "Available";
+		item31.review = "No";
+		
+		LaptopLenovoEmag item32 = new LaptopLenovoEmag();
+		item32.id = 32;
+		item32.description = "Laptop Lenovo Gaming 15.6, Legion Y520, FHD IPS, Intel® Core™ i7-7700HQ" + 
+				", 8GB DDR4, 1TB, GeForce GTX 1060 3GB Max-Q, FreeDos, Black";
+		item32.price = (double) 4299;
+		item32.stock = "Available";
+		item32.review = "No";
+		
+		LaptopLenovoEmag item33 = new LaptopLenovoEmag();
+		item33.id = 33;
+		item33.description = "Laptop Gaming Lenovo Legion Y520 cu procesor Intel® Core™ i7-7700HQ pana la 3.80 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 16GB, 256GB SSD, nVIDIA GeForce GTX 1050Ti 4GB, Free DOS, Red";
+		item33.price = (double) 4799;
+		item33.stock = "Available";
+		item33.review = "No";
+		
+		LaptopLenovoEmag item34 = new LaptopLenovoEmag();
+		item34.id = 34;
+		item34.description = "Laptop Gaming Lenovo Legion Y520 cu procesor Intel® Core™ i7-7700HQ pana la 3.80 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 1TB + 256GB SSD, nVIDIA GeForce GTX 1060 6GB Max-Q, Free DOS, Black";
+		item34.price = (double) 6699;
+		item34.stock = "Last product in STOCK!!!";
+		item34.review = "Yes";
+		
+		LaptopLenovoEmag item35 = new LaptopLenovoEmag();
+		item35.id = 35;
+		item35.description = "Laptop Gaming Lenovo Legion Y520 cu procesor Intel® Core™ i5-7300HQ pana la 3.50 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 1TB + 128GB SSD, nVIDIA GeForce GTX 1050 4GB, Free DOS, Red";
+		item35.price = (double) 3799;
+		item35.stock = "Available";
+		item35.review = "No";
+		
+		LaptopLenovoEmag item36 = new LaptopLenovoEmag();
+		item36.id = 36;
+		item36.description = "Laptop Gaming Lenovo Legion Y520 cu procesor Intel® Core™ i5-7300HQ pana la 3.50 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 1TB + 256GB SSD, nVIDIA GeForce GTX 1050Ti 4GB, Free DOS, Red";
+		item36.price = (double) 4099;
+		item36.stock = "Available";
+		item36.review = "No";
+		
+		LaptopLenovoEmag item37 = new LaptopLenovoEmag();
+		item37.id = 37;
+		item37.description = "Laptop Gaming Lenovo Legion Y520 cu procesor Intel® Core™ i5-7300HQ pana la 3.50 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 1TB + 128GB M.2 SSD, nVIDIA GeForce GTX 1060 6GB Max-Q, Free DOS, Black";
+		item37.price = (double) 4675;
+		item37.stock = "Limited";
+		item37.review = "No";
+		
+		LaptopLenovoEmag item38 = new LaptopLenovoEmag();
+		item38.id = 38;
+		item38.description = "Laptop Gaming Lenovo Legion Y520 cu procesor Intel® Core™ i5-7300HQ pana la 3.50 GHz, Kaby Lake, 15.6" + 
+				", Full HD, IPS, 8GB, 256GB SSD, nVIDIA GeForce GTX 1050 Ti 4GB, Free DOS, Black";
+		item38.price = (double) 4126;
+		item38.stock = "Limited";
+		item38.review = "No";
+		
+		LaptopLenovoEmag item39 = new LaptopLenovoEmag();
+		item39.id = 39;
+		item39.description = "Laptop Gaming Lenovo Legion Y520 cu procesor Intel® Core® i7-7700HQ 2.80GHz, Kaby Lake™, 15.6" + 
+				", Full HD, IPS, 8GB, 512GB SSD, nVIDIA GeForce GTX 1050 4GB, Microsoft Windows 10 Home, Black";
+		item39.price = (double) 6332;
+		item39.stock = "Last 2 products!";
+		item39.review = "Yes";
+		
+		LaptopLenovoEmag item40 = new LaptopLenovoEmag();
+		item40.id = 40;
+		item40.description = "Laptop Lenovo Gaming 15.6 Legion Y520, FHD IPS, Procesor Intel® Core™ i7-7700HQ (6M Cache, up to 3.80 GHz)" + 
+				", 8GB DDR4, 1TB + 128GB SSD, GeForce GTX 1060 6GB Max-Q, FreeDos, Black, Backlit, 2Yr";
+		item40.price = (double) 5958;
+		item40.stock = "Available";
+		item40.review = "No";
+		
+		LaptopLenovoEmag item41 = new LaptopLenovoEmag();
+		item41.id = 41;
+		item41.description = "Incarcator laptop Lenovo Legion Y520-15IKBM 135W";
+		item41.price = (double) 203.88;
+		item41.stock = "Available";
+		item41.review = "No";
+		
+		LaptopLenovoEmag item42 = new LaptopLenovoEmag();
+		item42.id = 42;
+		item42.description = "Display laptop Lenovo Legion Y520-15IKBM HD++";
+		item42.price = (double) 432.49;
+		item42.stock = "Available";
+		item42.review = "No";
+		
+		LaptopLenovoEmag item43 = new LaptopLenovoEmag();
+		item43.id = 43;
+		item43.description = "Incarcator original Lenovo Ideapad Y520-15IKBM 135W";
+		item43.price = (double) 262.00;
+		item43.stock = "Available";
+		item43.review = "No";
+		
+		LaptopLenovoEmag item44 = new LaptopLenovoEmag();
+		item44.id = 44;
+		item44.description = "Incarcator original Lenovo Ideapad Y520-15IKBA 135W";
+		item44.price = (double) 262.00;
+		item44.stock = "Available";
+		item44.review = "No";	
+		
+		map.put((double) item1.price, item1.description);
+		map.put((double) item2.price, item2.description);
+		map.put((double) item3.price, item3.description);
+		map.put((double) item4.price, item4.description);
+		map.put((double) item5.price, item5.description);
+		map.put((double) item6.price, item6.description);
+		map.put((double) item7.price, item7.description);
+		map.put((double) item8.price, item8.description);
+		map.put((double) item9.price, item9.description);
+		map.put((double) item10.price, item10.description);
+		map.put((double) item11.price, item11.description);
+		map.put((double) item12.price, item12.description);
+		map.put((double) item13.price, item13.description);
+		map.put((double) item14.price, item14.description);
+		map.put((double) item15.price, item15.description);
+		map.put((double) item16.price, item16.description);
+		map.put((double) item17.price, item17.description);
+		map.put((double) item18.price, item18.description);
+		map.put((double) item19.price, item19.description);
+		map.put((double) item20.price, item20.description);
+		map.put((double) item21.price, item21.description);
+		map.put((double) item22.price, item22.description);
+		map.put((double) item23.price, item23.description);
+		map.put((double) item24.price, item24.description);
+		map.put((double) item25.price, item25.description);
+		map.put((double) item26.price, item26.description);
+		map.put((double) item27.price, item27.description);
+		map.put((double) item28.price, item28.description);
+		map.put((double) item29.price, item29.description);
+		map.put((double) item30.price, item30.description);
+		map.put((double) item31.price, item31.description);
+		map.put((double) item32.price, item32.description);
+		map.put((double) item33.price, item33.description);
+		map.put((double) item34.price, item34.description);
+		map.put((double) item35.price, item35.description);
+		map.put((double) item36.price, item36.description);
+		map.put((double) item37.price, item37.description);
+		map.put((double) item38.price, item38.description);
+		map.put((double) item39.price, item39.description);
+		map.put((double) item40.price, item40.description);
+		map.put((double) item41.price, item41.description);
+		map.put((double) item42.price, item42.description);
+		map.put((double) item43.price, item43.description);
+		map.put((double) item44.price, item44.description);
+
+		
+        print(map);
+
+        map.putAll(map);
+
+	}
+
+	private static void print(HashMap<Double, String> map) {
+
+        if (map.isEmpty()) 
+        {
+            System.out.println("map is empty");
+        }
+         
+        else
+        {
+            System.out.println(map.get("i7"));
+            System.out.println("-----------------------------------------------------------------");
+            
+        }
+		
+	}
+
+}
+class LaptopLenovoEmag {
+	int id;
+	String description;
+	double price;
+	String stock;
+	String review;
+}
+
+
+
